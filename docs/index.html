@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ACL Ship Tracker</title>
+<meta name="description" content="Where every American Cruise Lines ship will be over the next two weeks.">
+<style>
+  :root {
+    --bg: #f5f6f8; --card: #ffffff; --text: #1b2330; --muted: #5f6b7a; --line: #e2e6eb;
+    --accent: #0b5cad; --accent-soft: #e6f0fa; --port: #0f7a4a; --warn: #9a6200; --today: #fff7e0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #11151b; --card: #1a2028; --text: #e6eaef; --muted: #98a3b1; --line: #2b333e;
+      --accent: #6fb0f2; --accent-soft: #1d2b3b; --port: #5fd19b; --warn: #e5b45a; --today: #2a2717;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 15px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  header { padding: 20px 16px 12px; max-width: 1100px; margin: 0 auto; }
+  h1 { margin: 0 0 4px; font-size: 24px; }
+  .sub { color: var(--muted); font-size: 13px; }
+  .controls { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+  .controls input, .controls select { font: inherit; padding: 8px 10px; border: 1px solid var(--line);
+         border-radius: 8px; background: var(--card); color: var(--text); }
+  .controls input { flex: 1 1 240px; }
+  .tabs { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+  .tabs button { font: inherit; border: 0; padding: 8px 14px; background: var(--card); color: var(--text); cursor: pointer; }
+  .tabs button.on { background: var(--accent); color: #fff; }
+  main { max-width: 1100px; margin: 0 auto; padding: 0 16px 40px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 14px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px; }
+  .card h2 { margin: 0; font-size: 17px; }
+  .card h2 a { color: inherit; text-decoration: none; }
+  .card h2 a:hover { text-decoration: underline; }
+  .pos { color: var(--muted); font-size: 12.5px; margin: 4px 0 10px; }
+  .days { list-style: none; margin: 0; padding: 0; }
+  .days li { display: grid; grid-template-columns: 74px 1fr; gap: 8px; padding: 6px 4px;
+             border-top: 1px solid var(--line); font-size: 13.5px; }
+  .days li.today { background: var(--today); border-radius: 6px; }
+  .date { color: var(--muted); font-variant-numeric: tabular-nums; }
+  .port { color: var(--port); font-weight: 600; }
+  .note { color: var(--muted); }
+  .est { color: var(--warn); font-size: 12px; }
+  .eta { color: var(--accent); font-weight: 600; }
+  .eta-box { background: var(--accent-soft); border-radius: 8px; padding: 6px 9px; margin: -2px 0 10px; font-size: 13px; }
+  .eta-box .note { font-size: 12px; }
+  .tag { display: inline-block; font-size: 11px; padding: 1px 6px; border-radius: 10px;
+         background: var(--accent-soft); color: var(--accent); margin-right: 4px; }
+  table { width: 100%; border-collapse: collapse; background: var(--card); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+  th, td { text-align: left; padding: 9px 12px; border-top: 1px solid var(--line); font-size: 14px; vertical-align: top; }
+  th { background: var(--accent-soft); color: var(--accent); border-top: 0; }
+  td a { color: var(--accent); font-weight: 600; text-decoration: none; }
+  .empty, .error { padding: 30px; text-align: center; color: var(--muted); }
+  footer { max-width: 1100px; margin: 0 auto; padding: 0 16px 30px; color: var(--muted); font-size: 12px; }
+  footer a { color: var(--accent); }
+  @media (max-width: 420px) { .grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>ACL Ship Tracker</h1>
+  <div class="sub" id="updated">Loading schedules…</div>
+  <div class="controls">
+    <input id="search" type="search" placeholder="Filter by ship or port (e.g. Savannah, Eagle)">
+    <div class="tabs">
+      <button id="tab-ships" class="on">By ship</button>
+      <button id="tab-day">By day</button>
+    </div>
+    <select id="day-pick" hidden></select>
+  </div>
+</header>
+<main id="app"></main>
+<footer>
+  Schedules come from public ship pages on <a href="https://www.cruisemapper.com/cruise-lines/American-Cruise-Lines-87">CruiseMapper</a>
+  and refresh automatically every few hours. Schedules can change; confirm with American Cruise Lines before making plans.
+</footer>
+
+<script>
+const DAYS_AHEAD = 14;
+const REFRESH_MS = 30 * 60 * 1000;  // re-check for new data every 30 minutes while the page is open
+const ETA_STALE_MS = 6 * 3600 * 1000;  // hide an ETA once it's this far in the past
+let data = null, etas = {}, view = "ships";
+
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+function isoLocal(d) {
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+}
+function nextDays() {
+  const out = [], d = new Date();
+  for (let i = 0; i < DAYS_AHEAD; i++) { out.push(isoLocal(d)); d.setDate(d.getDate() + 1); }
+  return out;
+}
+function prettyDate(iso, long) {
+  const [y, m, d] = iso.split("-").map(Number);
+  return new Date(y, m - 1, d).toLocaleDateString(undefined,
+    long ? { weekday: "long", month: "long", day: "numeric" } : { weekday: "short", month: "short", day: "numeric" });
+}
+
+// The ship's own AIS report of where it's headed next, if recent and still ahead.
+function shipEta(ship) {
+  const r = ship.mmsi && etas[ship.mmsi];
+  if (!r || !r.eta) return null;
+  const when = new Date(r.eta);
+  if (Date.now() - when > ETA_STALE_MS) return null;
+  return { ...r, when, day: isoLocal(when) };
+}
+const timeStr = d => d.toLocaleTimeString(undefined, { hour: "numeric", minute: "2-digit", timeZoneName: "short" });
+function ago(iso) {
+  const mins = Math.round((Date.now() - new Date(iso)) / 60000);
+  return mins < 60 ? `${mins} min ago` : mins < 1440 ? `${Math.round(mins / 60)} h ago` : `${Math.round(mins / 1440)} d ago`;
+}
+
+// What a ship is doing on one date: a list of { kind, text, est } entries.
+function shipOnDay(ship, day) {
+  let entries = scheduleOnDay(ship, day);
+  const eta = shipEta(ship);
+  if (eta && eta.day === day) {
+    entries = entries.filter(e => !e.text.startsWith("No cruise scheduled"));
+    entries.push({ kind: "eta", text: `Arrives ${eta.destination || "next port"} ${timeStr(eta.when)}`, est: "ETA from ship's AIS" });
+  }
+  return entries;
+}
+
+function scheduleOnDay(ship, day) {
+  let covering = ship.cruises.filter(c => c.start <= day && (c.end || c.start) >= day);
+  if (!covering.length) return [{ kind: "note", text: "No cruise scheduled (in port or repositioning)" }];
+  // The source sometimes lists overlapping cruises; trust the one with published daily stops.
+  const detailed = covering.filter(c => c.days && c.days.some(s => s.date === day));
+  if (detailed.length) covering = detailed;
+
+  const entries = [];
+  for (const c of covering) {
+    if (c.days) {
+      const seen = new Set();
+      for (const s of c.days.filter(s => s.date === day)) {
+        if (s.port && seen.has(s.port)) continue;  // same port listed again around a tour
+        seen.add(s.port);
+        const t = s.time ? ` (${s.time})` : "";
+        if (s.type === "depart") entries.push({ kind: "port", text: `Departs ${s.port}${t}` });
+        else if (s.type === "arrive") entries.push({ kind: "port", text: `Arrives ${s.port}${t}` });
+        else if (s.port) entries.push({ kind: "port", text: s.port + t });
+        else entries.push({ kind: "note", text: cap(s.note || "Cruising") });
+      }
+    } else if (day === c.start) {
+      entries.push({ kind: "port", text: `Departs ${c.from}` });
+    } else if (day === c.end) {
+      entries.push({ kind: "port", text: `Arrives ${c.to}` });
+    } else {
+      entries.push({ kind: "note", text: `En route ${c.from} → ${c.to}`, est: "daily stops not published yet" });
+    }
+  }
+  return entries;
+}
+const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
+
+function entryHtml(e) {
+  return `<div class="${e.kind}">${esc(e.text)}</div>` + (e.est ? `<div class="est">${esc(e.est)}</div>` : "");
+}
+
+function matches(ship, days, q) {
+  if (!q) return true;
+  if (ship.name.toLowerCase().includes(q)) return true;
+  return days.some(d => shipOnDay(ship, d).some(e => e.text.toLowerCase().includes(q)));
+}
+
+function renderShips(days, q) {
+  const active = s => s.cruises.some(c => c.start <= days[days.length - 1] && (c.end || c.start) >= days[0]);
+  const ships = data.ships.filter(s => matches(s, days, q)).sort((a, b) => active(b) - active(a));
+  if (!ships.length) return `<div class="empty">No ships match “${esc(q)}”.</div>`;
+  return `<div class="grid">` + ships.map(s => {
+    const current = s.cruises.find(c => c.start <= days[0] && (c.end || c.start) >= days[0]);
+    const eta = shipEta(s);
+    return `<section class="card">
+      <h2><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a></h2>
+      <div class="pos">${current ? `<span class="tag">${esc(current.title)}</span>` : ""}${esc(s.position || "")}</div>
+      ${eta ? `<div class="eta-box">Next port: <span class="eta">${esc(eta.destination || "not given")}</span>
+        · ETA <span class="eta">${esc(prettyDate(eta.day))}, ${esc(timeStr(eta.when))}</span>
+        <div class="note">From the ship's AIS broadcast, reported ${esc(ago(eta.reported))}</div></div>` : ""}
+      <ul class="days">${days.map((d, i) => `<li class="${i === 0 ? "today" : ""}">
+        <span class="date">${i === 0 ? "Today" : esc(prettyDate(d))}</span>
+        <span>${shipOnDay(s, d).map(entryHtml).join("")}</span></li>`).join("")}
+      </ul></section>`;
+  }).join("") + `</div>`;
+}
+
+function renderDay(day, q) {
+  const rows = data.ships
+    .map(s => ({ s, entries: shipOnDay(s, day) }))
+    .filter(r => !q || r.s.name.toLowerCase().includes(q) || r.entries.some(e => e.text.toLowerCase().includes(q)));
+  if (!rows.length) return `<div class="empty">No ships match “${esc(q)}” on ${esc(prettyDate(day, true))}.</div>`;
+  return `<table><thead><tr><th>Ship</th><th>${esc(prettyDate(day, true))}</th></tr></thead><tbody>` +
+    rows.map(r => `<tr><td><a href="${esc(r.s.url)}" target="_blank" rel="noopener">${esc(r.s.name)}</a></td>
+      <td>${r.entries.map(entryHtml).join("")}</td></tr>`).join("") + `</tbody></table>`;
+}
+
+function render() {
+  if (!data) return;
+  const days = nextDays(), q = $("search").value.trim().toLowerCase();
+  const pick = $("day-pick");
+  if (pick.options.length !== days.length || pick.options[0]?.value !== days[0]) {
+    const keep = pick.value;
+    pick.innerHTML = days.map((d, i) => `<option value="${d}">${i === 0 ? "Today" : prettyDate(d)}</option>`).join("");
+    if (days.includes(keep)) pick.value = keep;
+  }
+  pick.hidden = view !== "day";
+  $("tab-ships").classList.toggle("on", view === "ships");
+  $("tab-day").classList.toggle("on", view === "day");
+  $("app").innerHTML = view === "ships" ? renderShips(days, q) : renderDay(pick.value, q);
+}
+
+async function load() {
+  try {
+    const res = await fetch(`data/schedule.json?t=${Date.now()}`, { cache: "no-store" });
+    if (!res.ok) throw new Error(res.status);
+    data = await res.json();
+    try {  // ETAs are optional: the file is missing until the AIS key is set up
+      const etaRes = await fetch(`data/eta.json?t=${Date.now()}`, { cache: "no-store" });
+      if (etaRes.ok) etas = (await etaRes.json()).ships || {};
+    } catch { /* keep whatever ETAs we had */ }
+    const when = new Date(data.updated);
+    $("updated").textContent = `${data.ships.length} ships · next ${DAYS_AHEAD} days · data updated ${when.toLocaleString()}`;
+    render();
+  } catch (err) {
+    if (!data) $("app").innerHTML = `<div class="error">Couldn't load schedule data (${esc(err.message)}).</div>`;
+  }
+}
+
+$("search").addEventListener("input", render);
+$("day-pick").addEventListener("change", render);
+$("tab-ships").addEventListener("click", () => { view = "ships"; render(); });
+$("tab-day").addEventListener("click", () => { view = "day"; render(); });
+load();
+setInterval(load, REFRESH_MS);
+</script>
+</body>
+</html>
