@@ -1,10 +1,10 @@
 {
- "updated": "2026-10-28T20:21:51+00:00",
+ "updated": "2026-10-29T01:02:34+00:00",
  "ships": {
   "367438210": {
-   "destination": "BALTIMORE MD",
-   "eta": "2026-10-28T21:00:00+00:00",
-   "reported": "2026-10-28T20:29:37+00:00"
+   "destination": "XX XXX>US^0S3Q",
+   "eta": null,
+   "reported": "2026-10-29T01:08:33+00:00"
   },
   "368023770": {
    "destination": "GRIFFIN BAY, WA",
