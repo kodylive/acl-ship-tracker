@@ -1,10 +1,15 @@
 {
- "updated": "2026-10-30T22:27:21+00:00",
+ "updated": "2026-10-31T05:53:16+00:00",
  "ships": {
-  "368023770": {
-   "destination": "PORT TOWNSEND,WA",
-   "eta": "2026-10-30T12:00:00+00:00",
-   "reported": "2026-10-30T01:15:17+00:00"
+  "367438210": {
+   "destination": "ST_MICHAELS",
+   "eta": null,
+   "reported": "2026-10-31T05:53:43+00:00"
+  },
+  "368046350": {
+   "destination": "HOOD RIVER, OR",
+   "eta": "2026-10-31T18:00:00+00:00",
+   "reported": "2026-10-31T05:56:07+00:00"
   },
   "368434520": {
    "destination": "PORTSMOUTH, VA",
@@ -14,7 +19,7 @@
   "368483880": {
    "destination": "US^0Y27>0MV2",
    "eta": null,
-   "reported": "2026-10-30T18:11:31+00:00"
+   "reported": "2026-10-31T05:53:32+00:00"
   }
  }
 }
