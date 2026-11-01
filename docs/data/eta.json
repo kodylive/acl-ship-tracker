@@ -1,30 +1,20 @@
 {
- "updated": "2026-11-01T00:12:31+00:00",
+ "updated": "2026-11-01T06:16:52+00:00",
  "ships": {
-  "367438210": {
-   "destination": "ST_MICHAELS",
-   "eta": null,
-   "reported": "2026-10-31T05:53:43+00:00"
-  },
-  "368046350": {
-   "destination": "HOOD RIVER, OR",
-   "eta": "2026-10-31T18:00:00+00:00",
-   "reported": "2026-10-31T05:56:07+00:00"
+  "368023770": {
+   "destination": "SHILSHOLE MARINA",
+   "eta": "2026-11-01T03:00:00+00:00",
+   "reported": "2026-11-01T06:21:31+00:00"
   },
   "368317840": {
    "destination": "CHARLESTON, SC",
    "eta": "2026-10-31T17:30:00+00:00",
-   "reported": "2026-10-31T19:23:01+00:00"
+   "reported": "2026-11-01T06:23:11+00:00"
   },
   "368385810": {
    "destination": "BALTIMORE MD",
    "eta": "2026-10-31T20:00:00+00:00",
    "reported": "2026-10-31T12:46:24+00:00"
-  },
-  "368483880": {
-   "destination": "US^0Y27>0MV2",
-   "eta": null,
-   "reported": "2026-10-31T05:53:32+00:00"
   }
  }
 }
