@@ -1,11 +1,6 @@
 {
- "updated": "2026-11-02T11:20:11+00:00",
+ "updated": "2026-11-02T21:46:06+00:00",
  "ships": {
-  "367438210": {
-   "destination": "XX XXX>US^0GFN",
-   "eta": null,
-   "reported": "2026-11-01T19:48:47+00:00"
-  },
   "368023770": {
    "destination": "US SEAFD, LK UNION",
    "eta": null,
@@ -15,6 +10,11 @@
    "destination": "NYC-PIER 81",
    "eta": "2026-11-01T18:00:00+00:00",
    "reported": "2026-11-02T00:50:07+00:00"
+  },
+  "368366750": {
+   "destination": "CHARLESTON, SC",
+   "eta": "2026-11-02T14:30:00+00:00",
+   "reported": "2026-11-02T21:48:13+00:00"
   },
   "368450870": {
    "destination": "KALAMA",
