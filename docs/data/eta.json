@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-03T17:08:43+00:00",
+ "updated": "2026-11-03T23:28:41+00:00",
  "ships": {
-  "368366750": {
-   "destination": "CHARLESTON, SC",
-   "eta": "2026-11-02T14:30:00+00:00",
-   "reported": "2026-11-02T21:48:13+00:00"
+  "368317880": {
+   "destination": "BALTIMORE",
+   "eta": "2026-11-03T21:00:00+00:00",
+   "reported": "2026-11-03T23:34:04+00:00"
   },
   "368461470": {
    "destination": "MARCO ISLAND,FL",
@@ -12,9 +12,9 @@
    "reported": "2026-11-03T17:10:27+00:00"
   },
   "368483880": {
-   "destination": "ANNAPOLIS MD",
-   "eta": null,
-   "reported": "2026-11-03T17:16:05+00:00"
+   "destination": "ST MICHAEL MD",
+   "eta": "2026-11-04T02:00:00+00:00",
+   "reported": "2026-11-03T23:29:56+00:00"
   }
  }
 }

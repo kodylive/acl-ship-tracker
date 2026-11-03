@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T17:08:40+00:00",
+ "updated": "2026-11-03T23:28:40+00:00",
  "source": "https://www.cruisemapper.com/cruise-lines/American-Cruise-Lines-87",
  "ships": [
   {
@@ -1196,7 +1196,7 @@
    "name": "American Constellation",
    "url": "https://www.cruisemapper.com/ships/ACL-American-Constellation-1332",
    "mmsi": null,
-   "position": "The current location of ACL American Constellation is in North America West Coast cruising en route to Seattle. The AIS position was last reported 2 minutes ago.",
+   "position": "The current location of ACL American Constellation is in North America West Coast cruising at speed of 13 kn (24 km/h | 15 mph) en route to ANACORTES, WA. The AIS position was last reported 1 minute ago.",
    "cruises": [
     {
      "start": "2026-10-26",
@@ -1206,120 +1206,7 @@
      "from": "Tacoma WA, USA",
      "to": "Tacoma WA, USA",
      "price": "$6075",
-     "days": [
-      {
-       "date": "2026-10-26",
-       "time": null,
-       "type": "depart",
-       "port": "Tacoma WA, Washington",
-       "note": null
-      },
-      {
-       "date": "2026-10-27",
-       "time": null,
-       "type": "port",
-       "port": "Tacoma WA, Washington",
-       "note": null
-      },
-      {
-       "date": "2026-10-27",
-       "time": null,
-       "type": "cruising",
-       "port": null,
-       "note": "land tour, train/bus travel"
-      },
-      {
-       "date": "2026-10-27",
-       "time": null,
-       "type": "port",
-       "port": "Tacoma WA, Washington",
-       "note": null
-      },
-      {
-       "date": "2026-10-27",
-       "time": null,
-       "type": "cruising",
-       "port": null,
-       "note": "Puget Sound WA, Washington"
-      },
-      {
-       "date": "2026-10-28",
-       "time": null,
-       "type": "port",
-       "port": "Anacortes WA, Fidalgo Island Washington",
-       "note": null
-      },
-      {
-       "date": "2026-10-29",
-       "time": null,
-       "type": "port",
-       "port": "Friday Harbor WA, San Juan Island Washington",
-       "note": null
-      },
-      {
-       "date": "2026-10-30",
-       "time": null,
-       "type": "port",
-       "port": "San Juan Islands WA, Washington",
-       "note": null
-      },
-      {
-       "date": "2026-10-30",
-       "time": null,
-       "type": "port",
-       "port": "Port Angeles WA, Washington",
-       "note": null
-      },
-      {
-       "date": "2026-10-31",
-       "time": null,
-       "type": "cruising",
-       "port": null,
-       "note": "land tour, train/bus travel"
-      },
-      {
-       "date": "2026-10-31",
-       "time": null,
-       "type": "port",
-       "port": "Victoria BC, Vancouver Island Canada",
-       "note": null
-      },
-      {
-       "date": "2026-10-31",
-       "time": null,
-       "type": "cruising",
-       "port": null,
-       "note": "land tour, train/bus travel"
-      },
-      {
-       "date": "2026-10-31",
-       "time": null,
-       "type": "port",
-       "port": "Port Angeles WA, Washington",
-       "note": null
-      },
-      {
-       "date": "2026-11-01",
-       "time": null,
-       "type": "port",
-       "port": "Port Townsend WA, Washington",
-       "note": null
-      },
-      {
-       "date": "2026-11-02",
-       "time": null,
-       "type": "port",
-       "port": "Bremerton WA, Washington",
-       "note": null
-      },
-      {
-       "date": "2026-11-03",
-       "time": null,
-       "type": "arrive",
-       "port": "Tacoma WA, Washington",
-       "note": null
-      }
-     ]
+     "days": null
     },
     {
      "start": "2027-03-30",
@@ -1329,7 +1216,120 @@
      "from": "Tacoma WA, USA",
      "to": "Tacoma WA, USA",
      "price": "$5425",
-     "days": null
+     "days": [
+      {
+       "date": "2027-03-30",
+       "time": null,
+       "type": "depart",
+       "port": "Tacoma WA, Washington",
+       "note": null
+      },
+      {
+       "date": "2027-03-31",
+       "time": null,
+       "type": "port",
+       "port": "Tacoma WA, Washington",
+       "note": null
+      },
+      {
+       "date": "2027-03-31",
+       "time": null,
+       "type": "cruising",
+       "port": null,
+       "note": "land tour, train/bus travel"
+      },
+      {
+       "date": "2027-03-31",
+       "time": null,
+       "type": "port",
+       "port": "Tacoma WA, Washington",
+       "note": null
+      },
+      {
+       "date": "2027-03-31",
+       "time": null,
+       "type": "cruising",
+       "port": null,
+       "note": "Puget Sound WA, Washington"
+      },
+      {
+       "date": "2027-04-01",
+       "time": null,
+       "type": "port",
+       "port": "Anacortes WA, Fidalgo Island Washington",
+       "note": null
+      },
+      {
+       "date": "2027-04-02",
+       "time": null,
+       "type": "port",
+       "port": "Friday Harbor WA, San Juan Island Washington",
+       "note": null
+      },
+      {
+       "date": "2027-04-03",
+       "time": null,
+       "type": "port",
+       "port": "San Juan Islands WA, Washington",
+       "note": null
+      },
+      {
+       "date": "2027-04-03",
+       "time": null,
+       "type": "port",
+       "port": "Port Angeles WA, Washington",
+       "note": null
+      },
+      {
+       "date": "2027-04-04",
+       "time": null,
+       "type": "cruising",
+       "port": null,
+       "note": "land tour, train/bus travel"
+      },
+      {
+       "date": "2027-04-04",
+       "time": null,
+       "type": "port",
+       "port": "Victoria BC, Vancouver Island Canada",
+       "note": null
+      },
+      {
+       "date": "2027-04-04",
+       "time": null,
+       "type": "cruising",
+       "port": null,
+       "note": "land tour, train/bus travel"
+      },
+      {
+       "date": "2027-04-04",
+       "time": null,
+       "type": "port",
+       "port": "Port Angeles WA, Washington",
+       "note": null
+      },
+      {
+       "date": "2027-04-05",
+       "time": null,
+       "type": "port",
+       "port": "Port Townsend WA, Washington",
+       "note": null
+      },
+      {
+       "date": "2027-04-06",
+       "time": null,
+       "type": "port",
+       "port": "Bremerton WA, Washington",
+       "note": null
+      },
+      {
+       "date": "2027-04-07",
+       "time": null,
+       "type": "arrive",
+       "port": "Tacoma WA, Washington",
+       "note": null
+      }
+     ]
     },
     {
      "start": "2027-04-06",
@@ -3358,7 +3358,7 @@
    "name": "American Eagle",
    "url": "https://www.cruisemapper.com/ships/ACL-American-Eagle-2224",
    "mmsi": "368317840",
-   "position": "The current location of ACL American Eagle is in US East Coast cruising en route to HILTON HEAD,SC. The AIS position was last reported 2 minutes ago.",
+   "position": "The current location of ACL American Eagle is in US East Coast cruising en route to SAVANNAH,GA. The AIS position was last reported 2 minutes ago.",
    "cruises": [
     {
      "start": "2026-11-14",
@@ -4868,7 +4868,7 @@
    "name": "American Encore",
    "url": "https://www.cruisemapper.com/ships/ACL-American-Encore-2230",
    "mmsi": "368450870",
-   "position": "The current location of ACL American Encore is in North America West Coast cruising en route to STEVENSON. The AIS position was last reported 2 minutes ago.",
+   "position": "The current location of ACL American Encore is in North America West Coast cruising en route to STEVENSON. The AIS position was last reported 3 minutes ago.",
    "cruises": [
     {
      "start": "2026-10-27",
@@ -6278,7 +6278,7 @@
    "name": "American Glory",
    "url": "https://www.cruisemapper.com/ships/ACL-American-Glory-2225",
    "mmsi": "368317880",
-   "position": "The current location of ACL American Glory is in US East Coast cruising en route to Baltimore. The AIS position was last reported 1 minute ago.",
+   "position": "The current location of ACL American Glory is in US East Coast cruising en route to Baltimore. The AIS position was last reported 4 minutes ago.",
    "cruises": [
     {
      "start": "2026-10-25",
@@ -7800,7 +7800,7 @@
    "name": "American Harmony",
    "url": "https://www.cruisemapper.com/ships/ACL-American-Harmony-1550",
    "mmsi": "368082970",
-   "position": "The current location of ACL American Harmony is in North America West Coast cruising en route to HOOD RIVER OR. The AIS position was last reported 4 minutes ago.",
+   "position": "The current location of ACL American Harmony is in North America West Coast cruising en route to HOOD RIVER OR. The AIS position was last reported 3 minutes ago.",
    "cruises": [
     {
      "start": "2026-10-30",
@@ -8850,7 +8850,7 @@
    "name": "American Heritage",
    "url": "https://www.cruisemapper.com/ships/American-Heritage-828",
    "mmsi": "367648680",
-   "position": "The current location of American Heritage is in Gulf of Mexico cruising en route to VACHERIE,LA. The AIS position was last reported 4 minutes ago.",
+   "position": "The current location of American Heritage is in Gulf of Mexico cruising en route to VACHERIE,LA. The AIS position was last reported 3 minutes ago.",
    "cruises": [
     {
      "start": "2026-11-01",
@@ -10300,7 +10300,7 @@
    "name": "American Jazz",
    "url": "https://www.cruisemapper.com/ships/ACL-American-Jazz-1558",
    "mmsi": null,
-   "position": "The current location of ACL American Jazz is in North America West Coast cruising at speed of 10.5 kn (19 km/h | 12 mph) en route to THE DALLES, OR. The AIS position was last reported 4 minutes ago.",
+   "position": "The current location of ACL American Jazz is in North America West Coast cruising en route to THE DALLES, OR. The AIS position was last reported 1 hour ago.",
    "cruises": [
     {
      "start": "2026-10-30",
@@ -12882,7 +12882,7 @@
    "name": "American Liberty",
    "url": "https://www.cruisemapper.com/ships/ACL-American-Liberty-2226",
    "mmsi": "368366750",
-   "position": "The current location of ACL American Liberty is in US East Coast cruising en route to Charleston SC. The AIS position was last reported 7 minutes ago.",
+   "position": "The current location of ACL American Liberty is in US East Coast cruising en route to PORT ROYAL, SC. The AIS position was last reported 2 minutes ago.",
    "cruises": [
     {
      "start": "2026-11-09",
@@ -14242,7 +14242,7 @@
    "name": "American Maverick",
    "url": "https://www.cruisemapper.com/ships/ACL-American-Maverick-2231",
    "mmsi": "368461470",
-   "position": "The current location of ACL American Maverick is in Gulf of Mexico cruising en route to MARCO ISLAND,FL. The AIS position was last reported 2 minutes ago.",
+   "position": "The current location of ACL American Maverick is in Gulf of Mexico cruising en route to MARCO ISLAND,FL. The AIS position was last reported 1 minute ago.",
    "cruises": [
     {
      "start": "2026-10-20",
@@ -15687,7 +15687,7 @@
    "name": "American Melody",
    "url": "https://www.cruisemapper.com/ships/ACL-American-Melody-1559",
    "mmsi": "368205140",
-   "position": "The current location of ACL American Melody is in US Inland cruising en route to NATCHEZ, MS. The AIS position was last reported 5 minutes ago.",
+   "position": "The current location of ACL American Melody is in US Inland cruising en route to NATCHEZ, MS. The AIS position was last reported 4 minutes ago.",
    "cruises": [
     {
      "start": "2026-10-30",
@@ -16990,7 +16990,7 @@
    "name": "American Patriot",
    "url": "https://www.cruisemapper.com/ships/ACL-American-Patriot-2228",
    "mmsi": "368413570",
-   "position": "The current location of ACL American Patriot is in Great Lakes cruising en route to ERIE,PA. The AIS position was last reported 3 minutes ago.",
+   "position": "The current location of ACL American Patriot is in Great Lakes cruising en route to ERIE,PA. The AIS position was last reported 11 minutes ago.",
    "cruises": [
     {
      "start": "2026-11-22",
@@ -17311,7 +17311,7 @@
    "name": "American Pioneer",
    "url": "https://www.cruisemapper.com/ships/ACL-American-Pioneer-2229",
    "mmsi": "368434520",
-   "position": "The current location of ACL American Pioneer is in US East Coast cruising en route to YORKTOWN,VA. The AIS position was last reported 7 minutes ago.",
+   "position": "The current location of ACL American Pioneer is in US East Coast cruising en route to YORKTOWN,VA. The AIS position was last reported 5 minutes ago.",
    "cruises": [
     {
      "start": "2026-10-26",
@@ -18551,7 +18551,7 @@
    "name": "American Pride",
    "url": "https://www.cruisemapper.com/ships/American-Pride-1044",
    "mmsi": null,
-   "position": "The last location of American Pride is in North America West Coast cruising en route to CLARKSTON. The AIS position was last reported 22 hours ago.",
+   "position": "The last location of American Pride is in North America West Coast cruising en route to CLARKSTON. The AIS position was last reported 1 day ago.",
    "cruises": [
     {
      "start": "2026-10-25",
@@ -19701,7 +19701,7 @@
    "name": "American Ranger",
    "url": "https://www.cruisemapper.com/ships/ACL-American-Ranger-2232",
    "mmsi": "368483880",
-   "position": "The current location of ACL American Ranger is in US East Coast cruising en route to ANNAPOLIS MD. The AIS position was last reported 6 minutes ago.",
+   "position": "The current location of ACL American Ranger is in US East Coast cruising at speed of 10.2 kn (19 km/h | 12 mph) en route to ST MICHAEL MD. The AIS position was last reported 3 minutes ago.",
    "cruises": [
     {
      "start": "2026-11-01",
@@ -20801,7 +20801,7 @@
    "name": "American Serenade",
    "url": "https://www.cruisemapper.com/ships/ACL-American-Serenade-1650",
    "mmsi": "368297540",
-   "position": "The current location of ACL American Serenade is in US Inland cruising en route to VICKSBURG, MS. The AIS position was last reported 55 minutes ago.",
+   "position": "The current location of ACL American Serenade is in US Inland cruising en route to VICKSBURG, MS. The AIS position was last reported 3 minutes ago.",
    "cruises": [
     {
      "start": "2026-10-29",
@@ -22121,7 +22121,7 @@
    "name": "American Song",
    "url": "https://www.cruisemapper.com/ships/ACL-American-Song-1648",
    "mmsi": "368046350",
-   "position": "The current location of ACL American Song is in North America West Coast cruising at speed of 11.9 kn (22 km/h | 14 mph) en route to CLARKSTON, WA. The AIS position was last reported 2 hours ago.",
+   "position": "The current location of ACL American Song is in North America West Coast cruising en route to CLARKSTON, WA. The AIS position was last reported 1 hour ago.",
    "cruises": [
     {
      "start": "2026-10-27",
@@ -23652,7 +23652,7 @@
    "name": "American Splendor",
    "url": "https://www.cruisemapper.com/ships/American-Splendor-1203",
    "mmsi": "367710540",
-   "position": "The current location of American Splendor is in Gulf of Mexico cruising at speed of 12.1 kn (22 km/h | 14 mph) en route to VACHERIE. The AIS position was last reported 3 minutes ago.",
+   "position": "The current location of American Splendor is in Gulf of Mexico cruising en route to New Orleans. The AIS position was last reported 3 minutes ago.",
    "cruises": [
     {
      "start": "2026-11-10",
@@ -24805,7 +24805,7 @@
    "name": "American Symphony",
    "url": "https://www.cruisemapper.com/ships/ACL-American-Symphony-1560",
    "mmsi": "368261060",
-   "position": "The current location of ACL American Symphony is in US Inland cruising en route to Memphis TN. The AIS position was last reported 2 hours ago.",
+   "position": "The current location of ACL American Symphony is in US Inland cruising en route to Memphis TN. The AIS position was last reported 3 minutes ago.",
    "cruises": [
     {
      "start": "2026-11-10",
