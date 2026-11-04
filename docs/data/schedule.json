@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T17:20:34+00:00",
+ "updated": "2026-11-04T23:45:34+00:00",
  "source": "https://www.cruisemapper.com/cruise-lines/American-Cruise-Lines-87",
  "ships": [
   {
@@ -1196,7 +1196,7 @@
    "name": "American Constellation",
    "url": "https://www.cruisemapper.com/ships/ACL-American-Constellation-1332",
    "mmsi": null,
-   "position": "The current location of ACL American Constellation is in North America West Coast cruising en route to ANACORTES, WA. The AIS position was last reported 4 minutes ago.",
+   "position": "The current location of ACL American Constellation is in North America West Coast cruising en route to ANACORTES, WA. The AIS position was last reported 5 minutes ago.",
    "cruises": [
     {
      "start": "2026-10-26",
@@ -3358,7 +3358,7 @@
    "name": "American Eagle",
    "url": "https://www.cruisemapper.com/ships/ACL-American-Eagle-2224",
    "mmsi": "368317840",
-   "position": "The current location of ACL American Eagle is in US East Coast cruising en route to SAVANNAH,GA. The AIS position was last reported 6 minutes ago.",
+   "position": "The current location of ACL American Eagle is in US East Coast cruising en route to SAVANNAH,GA. The AIS position was last reported 4 minutes ago.",
    "cruises": [
     {
      "start": "2026-11-14",
@@ -4868,7 +4868,7 @@
    "name": "American Encore",
    "url": "https://www.cruisemapper.com/ships/ACL-American-Encore-2230",
    "mmsi": "368450870",
-   "position": "The current location of ACL American Encore is in North America West Coast cruising en route to STEVENSON. The AIS position was last reported 5 minutes ago.",
+   "position": "The current location of ACL American Encore is in North America West Coast cruising en route to Kalama WA. The AIS position was last reported 2 minutes ago.",
    "cruises": [
     {
      "start": "2026-10-27",
@@ -4878,99 +4878,7 @@
      "from": "Clarkston WA",
      "to": "Portland OR",
      "price": "$7920",
-     "days": [
-      {
-       "date": "2026-10-27",
-       "time": null,
-       "type": "depart",
-       "port": "Clarkston WA, Washington, Lewiston Idaho",
-       "note": null
-      },
-      {
-       "date": "2026-10-28",
-       "time": null,
-       "type": "port",
-       "port": "Clarkston WA, Washington, Lewiston Idaho",
-       "note": null
-      },
-      {
-       "date": "2026-10-28",
-       "time": null,
-       "type": "cruising",
-       "port": null,
-       "note": "land tour, train/bus travel"
-      },
-      {
-       "date": "2026-10-28",
-       "time": null,
-       "type": "port",
-       "port": "Clarkston WA, Washington, Lewiston Idaho",
-       "note": null
-      },
-      {
-       "date": "2026-10-29",
-       "time": null,
-       "type": "port",
-       "port": "Richland WA, Washington",
-       "note": null
-      },
-      {
-       "date": "2026-10-30",
-       "time": null,
-       "type": "cruising",
-       "port": null,
-       "note": "Columbia River Gorge, Washington-Oregon"
-      },
-      {
-       "date": "2026-10-31",
-       "time": null,
-       "type": "cruising",
-       "port": null,
-       "note": "river cruising"
-      },
-      {
-       "date": "2026-11-01",
-       "time": null,
-       "type": "port",
-       "port": "Kalama WA, Washington",
-       "note": null
-      },
-      {
-       "date": "2026-11-02",
-       "time": null,
-       "type": "port",
-       "port": "Astoria OR, Oregon",
-       "note": null
-      },
-      {
-       "date": "2026-11-03",
-       "time": null,
-       "type": "cruising",
-       "port": null,
-       "note": "Columbia River Gorge, Washington-Oregon"
-      },
-      {
-       "date": "2026-11-04",
-       "time": null,
-       "type": "port",
-       "port": "Camas-Washougal WA, Washington",
-       "note": null
-      },
-      {
-       "date": "2026-11-04",
-       "time": null,
-       "type": "cruising",
-       "port": null,
-       "note": "land tour, train/bus travel"
-      },
-      {
-       "date": "2026-11-04",
-       "time": null,
-       "type": "arrive",
-       "port": "Portland OR, Oregon",
-       "note": null
-      }
-     ]
+     "days": null
     },
     {
      "start": "2026-11-03",
@@ -4980,7 +4888,99 @@
      "from": "Portland OR",
      "to": "Clarkston WA",
      "price": "$7390",
-     "days": null
+     "days": [
+      {
+       "date": "2026-11-03",
+       "time": null,
+       "type": "depart",
+       "port": "Portland OR, Oregon",
+       "note": null
+      },
+      {
+       "date": "2026-11-04",
+       "time": null,
+       "type": "port",
+       "port": "Portland OR, Oregon",
+       "note": null
+      },
+      {
+       "date": "2026-11-04",
+       "time": null,
+       "type": "cruising",
+       "port": null,
+       "note": "land tour, train/bus travel"
+      },
+      {
+       "date": "2026-11-04",
+       "time": null,
+       "type": "port",
+       "port": "Stevenson WA, Washington",
+       "note": null
+      },
+      {
+       "date": "2026-11-04",
+       "time": null,
+       "type": "cruising",
+       "port": null,
+       "note": "land tour, train/bus travel"
+      },
+      {
+       "date": "2026-11-04",
+       "time": null,
+       "type": "port",
+       "port": "Camas-Washougal WA, Washington",
+       "note": null
+      },
+      {
+       "date": "2026-11-05",
+       "time": null,
+       "type": "port",
+       "port": "Astoria OR, Oregon",
+       "note": null
+      },
+      {
+       "date": "2026-11-06",
+       "time": null,
+       "type": "port",
+       "port": "Kalama WA, Washington",
+       "note": null
+      },
+      {
+       "date": "2026-11-07",
+       "time": null,
+       "type": "port",
+       "port": "The Dalles OR, Oregon",
+       "note": null
+      },
+      {
+       "date": "2026-11-08",
+       "time": null,
+       "type": "cruising",
+       "port": null,
+       "note": "Columbia River Gorge, Washington-Oregon"
+      },
+      {
+       "date": "2026-11-09",
+       "time": null,
+       "type": "port",
+       "port": "Richland WA, Washington",
+       "note": null
+      },
+      {
+       "date": "2026-11-10",
+       "time": null,
+       "type": "port",
+       "port": "Clarkston WA, Washington, Lewiston Idaho",
+       "note": null
+      },
+      {
+       "date": "2026-11-11",
+       "time": null,
+       "type": "arrive",
+       "port": "Clarkston WA, Washington, Lewiston Idaho",
+       "note": null
+      }
+     ]
     },
     {
      "start": "2026-11-10",
@@ -6278,7 +6278,7 @@
    "name": "American Glory",
    "url": "https://www.cruisemapper.com/ships/ACL-American-Glory-2225",
    "mmsi": "368317880",
-   "position": "The current location of ACL American Glory is in US East Coast cruising en route to Baltimore. The AIS position was last reported 7 minutes ago.",
+   "position": "The current location of ACL American Glory is in US East Coast cruising at speed of 10.1 kn (19 km/h | 12 mph) en route to YORKTOWN,VA. The AIS position was last reported 2 minutes ago.",
    "cruises": [
     {
      "start": "2026-10-25",
@@ -7800,7 +7800,7 @@
    "name": "American Harmony",
    "url": "https://www.cruisemapper.com/ships/ACL-American-Harmony-1550",
    "mmsi": "368082970",
-   "position": "The current location of ACL American Harmony is in North America West Coast cruising en route to KALAMA WA. The AIS position was last reported 5 minutes ago.",
+   "position": "The current location of ACL American Harmony is in North America West Coast cruising en route to KALAMA WA. The AIS position was last reported 6 minutes ago.",
    "cruises": [
     {
      "start": "2026-10-30",
@@ -8850,7 +8850,7 @@
    "name": "American Heritage",
    "url": "https://www.cruisemapper.com/ships/American-Heritage-828",
    "mmsi": "367648680",
-   "position": "The current location of American Heritage is in Gulf of Mexico cruising en route to VACHERIE,LA. The AIS position was last reported 2 minutes ago.",
+   "position": "The current location of American Heritage is in Gulf of Mexico cruising en route to VACHERIE,LA. The AIS position was last reported 4 minutes ago.",
    "cruises": [
     {
      "start": "2026-11-01",
@@ -9504,7 +9504,7 @@
    "name": "American Independence",
    "url": "https://www.cruisemapper.com/ships/ACL-American-Independence-827",
    "mmsi": "367438210",
-   "position": "The current location of ACL American Independence is in US East Coast cruising at speed of 10.6 kn (20 km/h | 12 mph) en route to Baltimore. The AIS position was last reported 4 minutes ago.",
+   "position": "The current location of ACL American Independence is in US East Coast cruising at speed of 10.2 kn (19 km/h | 12 mph) en route to Baltimore. The AIS position was last reported 4 minutes ago.",
    "cruises": [
     {
      "start": "2026-10-29",
@@ -10300,7 +10300,7 @@
    "name": "American Jazz",
    "url": "https://www.cruisemapper.com/ships/ACL-American-Jazz-1558",
    "mmsi": null,
-   "position": "The current location of ACL American Jazz is in North America West Coast cruising en route to THE DALLES, OR. The AIS position was last reported 1 hour ago.",
+   "position": "The current location of ACL American Jazz is in North America West Coast cruising at speed of 11.8 kn (22 km/h | 14 mph) en route to RICHLAND, WA. The AIS position was last reported 1 hour ago.",
    "cruises": [
     {
      "start": "2026-10-30",
@@ -11390,7 +11390,7 @@
    "name": "American Legend",
    "url": "https://www.cruisemapper.com/ships/ACL-American-Legend-2227",
    "mmsi": "368385810",
-   "position": "The current location of ACL American Legend is in US East Coast cruising at speed of 10.2 kn (19 km/h | 12 mph) en route to MOREHEAED CITY NC. The AIS position was last reported 19 seconds ago.",
+   "position": "The current location of ACL American Legend is in US East Coast cruising en route to MOREHEAED CITY NC. The AIS position was last reported 8 minutes ago.",
    "cruises": [
     {
      "start": "2026-10-31",
@@ -12882,7 +12882,7 @@
    "name": "American Liberty",
    "url": "https://www.cruisemapper.com/ships/ACL-American-Liberty-2226",
    "mmsi": "368366750",
-   "position": "The current location of ACL American Liberty is in US East Coast cruising en route to PORT ROYAL, SC. The AIS position was last reported 7 minutes ago.",
+   "position": "The current location of ACL American Liberty is in US East Coast cruising en route to HILTON HEAD, SC. The AIS position was last reported 5 minutes ago.",
    "cruises": [
     {
      "start": "2026-11-09",
@@ -14242,7 +14242,7 @@
    "name": "American Maverick",
    "url": "https://www.cruisemapper.com/ships/ACL-American-Maverick-2231",
    "mmsi": "368461470",
-   "position": "The current location of ACL American Maverick is in Gulf of Mexico cruising en route to MARCO ISLAND,FL. The AIS position was last reported 6 minutes ago.",
+   "position": "The current location of ACL American Maverick is in Gulf of Mexico cruising en route to MARCO ISLAND,FL. The AIS position was last reported 5 minutes ago.",
    "cruises": [
     {
      "start": "2026-10-20",
@@ -14252,134 +14252,7 @@
      "from": "Amelia Island Florida",
      "to": "St Petersburg FL",
      "price": "$12360",
-     "days": [
-      {
-       "date": "2026-10-20",
-       "time": null,
-       "type": "depart",
-       "port": "Amelia Island Florida, Fernandina Beach",
-       "note": null
-      },
-      {
-       "date": "2026-10-21",
-       "time": null,
-       "type": "port",
-       "port": "Amelia Island Florida, Fernandina Beach",
-       "note": null
-      },
-      {
-       "date": "2026-10-21",
-       "time": null,
-       "type": "cruising",
-       "port": null,
-       "note": "land tour, train/bus travel"
-      },
-      {
-       "date": "2026-10-21",
-       "time": null,
-       "type": "port",
-       "port": "Amelia Island Florida, Fernandina Beach",
-       "note": null
-      },
-      {
-       "date": "2026-10-21",
-       "time": null,
-       "type": "cruising",
-       "port": null,
-       "note": "coastal cruising"
-      },
-      {
-       "date": "2026-10-22",
-       "time": null,
-       "type": "port",
-       "port": "Green Cove Springs FL, Florida",
-       "note": null
-      },
-      {
-       "date": "2026-10-23",
-       "time": null,
-       "type": "port",
-       "port": "St Augustine FL, Florida",
-       "note": null
-      },
-      {
-       "date": "2026-10-24",
-       "time": null,
-       "type": "cruising",
-       "port": null,
-       "note": "river cruising"
-      },
-      {
-       "date": "2026-10-25",
-       "time": null,
-       "type": "port",
-       "port": "Port Canaveral, Orlando, Florida",
-       "note": null
-      },
-      {
-       "date": "2026-10-26",
-       "time": null,
-       "type": "cruising",
-       "port": null,
-       "note": "coastal cruising"
-      },
-      {
-       "date": "2026-10-27",
-       "time": null,
-       "type": "port",
-       "port": "West Palm Beach, Florida",
-       "note": null
-      },
-      {
-       "date": "2026-10-28",
-       "time": null,
-       "type": "port",
-       "port": "Key Biscayne FL, Florida",
-       "note": null
-      },
-      {
-       "date": "2026-10-29",
-       "time": null,
-       "type": "port",
-       "port": "Key West, Florida",
-       "note": null
-      },
-      {
-       "date": "2026-10-31",
-       "time": null,
-       "type": "cruising",
-       "port": null,
-       "note": "sea cruising"
-      },
-      {
-       "date": "2026-11-01",
-       "time": null,
-       "type": "port",
-       "port": "Marco Island Florida",
-       "note": null
-      },
-      {
-       "date": "2026-11-02",
-       "time": null,
-       "type": "port",
-       "port": "Punta Gorda Florida, Fishermen's Village",
-       "note": null
-      },
-      {
-       "date": "2026-11-03",
-       "time": null,
-       "type": "port",
-       "port": "St Petersburg FL, Florida",
-       "note": null
-      },
-      {
-       "date": "2026-11-04",
-       "time": null,
-       "type": "arrive",
-       "port": "St Petersburg FL, Florida",
-       "note": null
-      }
-     ]
+     "days": null
     },
     {
      "start": "2026-11-17",
@@ -14389,7 +14262,78 @@
      "from": "Tampa",
      "to": "St Petersburg FL",
      "price": "$6575",
-     "days": null
+     "days": [
+      {
+       "date": "2026-11-17",
+       "time": null,
+       "type": "depart",
+       "port": "Tampa, Florida",
+       "note": null
+      },
+      {
+       "date": "2026-11-18",
+       "time": null,
+       "type": "port",
+       "port": "Tampa, Florida",
+       "note": null
+      },
+      {
+       "date": "2026-11-18",
+       "time": null,
+       "type": "cruising",
+       "port": null,
+       "note": "land tour, train/bus travel"
+      },
+      {
+       "date": "2026-11-18",
+       "time": null,
+       "type": "port",
+       "port": "St Petersburg FL, Florida",
+       "note": null
+      },
+      {
+       "date": "2026-11-19",
+       "time": null,
+       "type": "port",
+       "port": "Marco Island Florida",
+       "note": null
+      },
+      {
+       "date": "2026-11-20",
+       "time": null,
+       "type": "port",
+       "port": "Key West, Florida",
+       "note": null
+      },
+      {
+       "date": "2026-11-22",
+       "time": null,
+       "type": "cruising",
+       "port": null,
+       "note": "coastal cruising"
+      },
+      {
+       "date": "2026-11-23",
+       "time": null,
+       "type": "port",
+       "port": "Punta Gorda Florida, Fishermen's Village",
+       "note": null
+      },
+      {
+       "date": "2026-11-24",
+       "time": null,
+       "type": "port",
+       "port": "St Petersburg FL, Florida",
+       "note": null
+      },
+      {
+       "date": "2026-11-25",
+       "time": null,
+       "type": "arrive",
+       "port": "St Petersburg FL, Florida",
+       "note": null
+      }
+     ]
     },
     {
      "start": "2026-11-24",
@@ -15687,7 +15631,7 @@
    "name": "American Melody",
    "url": "https://www.cruisemapper.com/ships/ACL-American-Melody-1559",
    "mmsi": "368205140",
-   "position": "The current location of ACL American Melody is in US Inland cruising en route to LE TOURNEAU, MS. The AIS position was last reported 4 minutes ago.",
+   "position": "The current location of ACL American Melody is in US Inland cruising en route to LE TOURNEAU, MS. The AIS position was last reported 50 seconds ago.",
    "cruises": [
     {
      "start": "2026-10-30",
@@ -16990,7 +16934,7 @@
    "name": "American Patriot",
    "url": "https://www.cruisemapper.com/ships/ACL-American-Patriot-2228",
    "mmsi": "368413570",
-   "position": "The current location of ACL American Patriot is in Great Lakes cruising en route to ERIE,PA. The AIS position was last reported 6 minutes ago.",
+   "position": "The current location of ACL American Patriot is in Great Lakes cruising en route to ERIE,PA. The AIS position was last reported 7 minutes ago.",
    "cruises": [
     {
      "start": "2026-11-22",
@@ -17311,7 +17255,7 @@
    "name": "American Pioneer",
    "url": "https://www.cruisemapper.com/ships/ACL-American-Pioneer-2229",
    "mmsi": "368434520",
-   "position": "The current location of ACL American Pioneer is in US East Coast cruising en route to YORKTOWN,VA. The AIS position was last reported 5 minutes ago.",
+   "position": "The current location of ACL American Pioneer is in US East Coast cruising en route to WASHINGTON,DC. The AIS position was last reported 5 minutes ago.",
    "cruises": [
     {
      "start": "2026-10-26",
@@ -18551,7 +18495,7 @@
    "name": "American Pride",
    "url": "https://www.cruisemapper.com/ships/American-Pride-1044",
    "mmsi": null,
-   "position": "The last location of American Pride is in North America West Coast cruising en route to CLARKSTON. The AIS position was last reported 1 day ago.",
+   "position": "The last location of American Pride is in North America West Coast cruising en route to CLARKSTON. The AIS position was last reported 2 days ago.",
    "cruises": [
     {
      "start": "2026-10-25",
@@ -19701,7 +19645,7 @@
    "name": "American Ranger",
    "url": "https://www.cruisemapper.com/ships/ACL-American-Ranger-2232",
    "mmsi": "368483880",
-   "position": "The current location of ACL American Ranger is in US East Coast cruising en route to PORTSMOUTH VA. The AIS position was last reported 4 minutes ago.",
+   "position": "The current location of ACL American Ranger is in US East Coast cruising en route to PORTSMOUTH VA. The AIS position was last reported 5 minutes ago.",
    "cruises": [
     {
      "start": "2026-11-01",
@@ -20801,7 +20745,7 @@
    "name": "American Serenade",
    "url": "https://www.cruisemapper.com/ships/ACL-American-Serenade-1650",
    "mmsi": "368297540",
-   "position": "The current location of ACL American Serenade is in US Inland cruising en route to ROSEDALE MS. The AIS position was last reported 1 minute ago.",
+   "position": "The current location of ACL American Serenade is in US Inland cruising en route to ROSEDALE MS. The AIS position was last reported 2 minutes ago.",
    "cruises": [
     {
      "start": "2026-10-29",
@@ -22121,7 +22065,7 @@
    "name": "American Song",
    "url": "https://www.cruisemapper.com/ships/ACL-American-Song-1648",
    "mmsi": "368046350",
-   "position": "The last location of ACL American Song is in North America West Coast cruising en route to CLARKSTON, WA. The AIS position was last reported 19 hours ago.",
+   "position": "The current location of ACL American Song is in North America West Coast cruising en route to CLARKSTON, WA. The AIS position was last reported 1 hour ago.",
    "cruises": [
     {
      "start": "2026-10-27",
@@ -22131,99 +22075,7 @@
      "from": "Portland OR",
      "to": "Clarkston WA",
      "price": "$6860",
-     "days": [
-      {
-       "date": "2026-10-27",
-       "time": null,
-       "type": "depart",
-       "port": "Portland OR, Oregon",
-       "note": null
-      },
-      {
-       "date": "2026-10-28",
-       "time": null,
-       "type": "port",
-       "port": "Portland OR, Oregon",
-       "note": null
-      },
-      {
-       "date": "2026-10-28",
-       "time": null,
-       "type": "cruising",
-       "port": null,
-       "note": "land tour, train/bus travel"
-      },
-      {
-       "date": "2026-10-28",
-       "time": null,
-       "type": "port",
-       "port": "Stevenson WA, Washington",
-       "note": null
-      },
-      {
-       "date": "2026-10-28",
-       "time": null,
-       "type": "cruising",
-       "port": null,
-       "note": "land tour, train/bus travel"
-      },
-      {
-       "date": "2026-10-28",
-       "time": null,
-       "type": "port",
-       "port": "Camas-Washougal WA, Washington",
-       "note": null
-      },
-      {
-       "date": "2026-10-29",
-       "time": null,
-       "type": "port",
-       "port": "Astoria OR, Oregon",
-       "note": null
-      },
-      {
-       "date": "2026-10-30",
-       "time": null,
-       "type": "port",
-       "port": "Kalama WA, Washington",
-       "note": null
-      },
-      {
-       "date": "2026-10-31",
-       "time": null,
-       "type": "port",
-       "port": "The Dalles OR, Oregon",
-       "note": null
-      },
-      {
-       "date": "2026-11-01",
-       "time": null,
-       "type": "cruising",
-       "port": null,
-       "note": "Columbia River Gorge, Washington-Oregon"
-      },
-      {
-       "date": "2026-11-02",
-       "time": null,
-       "type": "port",
-       "port": "Richland WA, Washington",
-       "note": null
-      },
-      {
-       "date": "2026-11-03",
-       "time": null,
-       "type": "port",
-       "port": "Clarkston WA, Washington, Lewiston Idaho",
-       "note": null
-      },
-      {
-       "date": "2026-11-04",
-       "time": null,
-       "type": "arrive",
-       "port": "Clarkston WA, Washington, Lewiston Idaho",
-       "note": null
-      }
-     ]
+     "days": null
     },
     {
      "start": "2026-11-03",
@@ -22233,7 +22085,99 @@
      "from": "Clarkston WA",
      "to": "Portland OR",
      "price": "$6400",
-     "days": null
+     "days": [
+      {
+       "date": "2026-11-03",
+       "time": null,
+       "type": "depart",
+       "port": "Clarkston WA, Washington, Lewiston Idaho",
+       "note": null
+      },
+      {
+       "date": "2026-11-04",
+       "time": null,
+       "type": "port",
+       "port": "Clarkston WA, Washington, Lewiston Idaho",
+       "note": null
+      },
+      {
+       "date": "2026-11-04",
+       "time": null,
+       "type": "cruising",
+       "port": null,
+       "note": "land tour, train/bus travel"
+      },
+      {
+       "date": "2026-11-04",
+       "time": null,
+       "type": "port",
+       "port": "Clarkston WA, Washington, Lewiston Idaho",
+       "note": null
+      },
+      {
+       "date": "2026-11-05",
+       "time": null,
+       "type": "port",
+       "port": "Richland WA, Washington",
+       "note": null
+      },
+      {
+       "date": "2026-11-06",
+       "time": null,
+       "type": "cruising",
+       "port": null,
+       "note": "Columbia River Gorge, Washington-Oregon"
+      },
+      {
+       "date": "2026-11-07",
+       "time": null,
+       "type": "cruising",
+       "port": null,
+       "note": "river cruising"
+      },
+      {
+       "date": "2026-11-08",
+       "time": null,
+       "type": "port",
+       "port": "Kalama WA, Washington",
+       "note": null
+      },
+      {
+       "date": "2026-11-09",
+       "time": null,
+       "type": "port",
+       "port": "Astoria OR, Oregon",
+       "note": null
+      },
+      {
+       "date": "2026-11-10",
+       "time": null,
+       "type": "cruising",
+       "port": null,
+       "note": "Columbia River Gorge, Washington-Oregon"
+      },
+      {
+       "date": "2026-11-11",
+       "time": null,
+       "type": "port",
+       "port": "Camas-Washougal WA, Washington",
+       "note": null
+      },
+      {
+       "date": "2026-11-11",
+       "time": null,
+       "type": "cruising",
+       "port": null,
+       "note": "land tour, train/bus travel"
+      },
+      {
+       "date": "2026-11-11",
+       "time": null,
+       "type": "arrive",
+       "port": "Portland OR, Oregon",
+       "note": null
+      }
+     ]
     },
     {
      "start": "2027-03-30",
@@ -23652,7 +23596,7 @@
    "name": "American Splendor",
    "url": "https://www.cruisemapper.com/ships/American-Splendor-1203",
    "mmsi": "367710540",
-   "position": "The current location of American Splendor is in Gulf of Mexico cruising en route to VACHERIE. The AIS position was last reported 2 minutes ago.",
+   "position": "The current location of American Splendor is in Gulf of Mexico cruising en route to VACHERIE. The AIS position was last reported 36 seconds ago.",
    "cruises": [
     {
      "start": "2026-11-10",
@@ -24805,7 +24749,7 @@
    "name": "American Symphony",
    "url": "https://www.cruisemapper.com/ships/ACL-American-Symphony-1560",
    "mmsi": "368261060",
-   "position": "The current location of ACL American Symphony is in US Inland cruising en route to Memphis TN. The AIS position was last reported 14 seconds ago.",
+   "position": "The current location of ACL American Symphony is in US Inland cruising at speed of 11.2 kn (21 km/h | 13 mph) en route to Memphis TN. The AIS position was last reported 58 minutes ago.",
    "cruises": [
     {
      "start": "2026-11-10",
