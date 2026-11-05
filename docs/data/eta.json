@@ -1,15 +1,20 @@
 {
- "updated": "2026-11-05T17:28:45+00:00",
+ "updated": "2026-11-05T23:42:08+00:00",
  "ships": {
   "367438210": {
-   "destination": "US^0S3Q>0FBQ",
+   "destination": "US^0FLE>0FBQ",
    "eta": null,
-   "reported": "2026-11-05T17:31:44+00:00"
+   "reported": "2026-11-05T23:43:38+00:00"
   },
   "368082970": {
    "destination": "KALAMA WA",
    "eta": "2026-11-03T22:00:00+00:00",
    "reported": "2026-11-04T23:47:59+00:00"
+  },
+  "368366750": {
+   "destination": "SAVANNAH, GA",
+   "eta": "2026-11-06T00:00:00+00:00",
+   "reported": "2026-11-05T23:45:56+00:00"
   },
   "368434520": {
    "destination": "WASHINGTON,DC",
