@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T23:45:37+00:00",
+ "updated": "2026-11-05T06:56:53+00:00",
  "ships": {
   "368082970": {
    "destination": "KALAMA WA",
@@ -10,6 +10,11 @@
    "destination": "BALTIMORE",
    "eta": "2026-11-03T21:00:00+00:00",
    "reported": "2026-11-04T17:22:05+00:00"
+  },
+  "368450870": {
+   "destination": "KALAMA",
+   "eta": "2026-11-05T05:00:00+00:00",
+   "reported": "2026-11-05T07:03:23+00:00"
   },
   "368461470": {
    "destination": "MARCO ISLAND,FL",
